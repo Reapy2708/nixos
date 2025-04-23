@@ -9,6 +9,9 @@ in {
   };
 
   config = lib.mkIf config.nixOSModules.system.nvidia.gt730m.enable {
+    services.xserver.videoDrivers = [ "nvidia" ];
+    nixpkgs.config.nvidia.acceptLicense = true;
+  
     hardware.nvidia = {
       package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
 
