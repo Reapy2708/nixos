@@ -1,8 +1,8 @@
 { config, pkgs, inputs, lib, ... }:
 
 {
-  home.username = "reapy";
-  home.homeDirectory = "/home/reapy";
+  home.username = "tino";
+  home.homeDirectory = "/home/tino";
 
   home.sessionVariables = {
     TERMINAL = "kitty";
@@ -12,8 +12,6 @@
     ../../modules/home-manager
   ];
 
-  gaming.enable = true;
-  crypto.enable = true;
   zsh.enable = true;
   #home.packages = with pkgs; [];
 

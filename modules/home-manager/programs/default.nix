@@ -9,6 +9,7 @@
     ./kitty.nix
     ./helix.nix
     ./zsh.nix
+    ./git.nix
   ];
 
   gaming.enable = lib.mkDefault false;
@@ -18,4 +19,5 @@
   kitty.enable = lib.mkDefault true;
   helix.enable = lib.mkDefault true;
   zsh.enable = lib.mkDefault true;
+  git.enable = lib.mkDefault true;
 }

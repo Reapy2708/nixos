@@ -11,11 +11,11 @@
       package = pkgs.gitAndTools.gitFull;
       enable = true;
       userName = "Reapy2708";
-      userEmail = "Michelw278@gmail.com"
+      userEmail = "Michelw278@gmail.com";
       extraConfig = {
         color = {
           ui = "auto";
-        }  
+        };
       };
     };
   };

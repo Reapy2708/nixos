@@ -49,8 +49,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-	  wget
-    git
+    wget
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 
