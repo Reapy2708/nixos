@@ -16,7 +16,12 @@ in {
       powerManagement.enable = false;
       powerManagement.finegrained = false; # gpu too old for this feature
       nvidiaSettings = true;
-      
+
+      prime = {
+        sync.enable = true;
+        nvidiaBusId = "PCI:2:0:0";
+        intelBusId = "PCI:0:2:0";
+      };
     };
   };
 }

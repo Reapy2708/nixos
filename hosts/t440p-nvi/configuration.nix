@@ -9,6 +9,12 @@
     [../../modules/nixos];
 
   nixOSModules = {
+    system = {
+      nvidia = {
+        gt730m.enable = true;
+      };
+    };
+    
     programs = {
       android.enable = true;
     };
