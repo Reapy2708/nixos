@@ -3,5 +3,5 @@
 {
   imports = [
     ./gt730m.nix
-  ]
+  ];
 }

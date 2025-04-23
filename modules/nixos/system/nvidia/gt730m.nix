@@ -1,11 +1,11 @@
-{ pkgs, config, lib }:
+{ pkgs, config, lib, ...  }:
 
 let
   cfg = config.nixOSModules.system.nvidia.gt730m;
 in {
   options.nixOSModules.system.nvidia.gt730m = {
     enable =
-      lib.mkEnableOption "gt730m laptop graphics module"
+      lib.mkEnableOption "gt730m laptop graphics module";
   };
 
   config = lib.mkIf config.nixOSModules.system.nvidia.gt730m.enable {
