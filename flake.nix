@@ -45,7 +45,7 @@
 	          home-manager.useUserPackages = true;
 	          home-manager.users.reapy = import ./hosts/t460s/home.nix;
           }
-	      ];
+	];
       };
       
       t440p-nvi = nixpkgs.lib.nixosSystem {
@@ -59,6 +59,19 @@
             home-manager.users.tino = import ./hosts/t440p-nvi/home.nix;
           }    
         ];
+      };
+
+      yoga2 = nixpkgs.lib.nixosSystem {
+      	system = "x86_64-linux";
+	specialArgs = {inherit inputs;};
+	modules = [
+	  ./hosts/yoga2
+          home-manager.nixosModules.home-manager {
+	    home-manager.useGlobalPkgs = true;
+	    home-manager.useUserPackages = true;
+	    home-manager.users.reapy = import ./hosts/yoga2/home.nix;
+          }
+	];
       };
       
     };
