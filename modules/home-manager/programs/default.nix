@@ -10,6 +10,7 @@
     ./helix.nix
     ./zsh.nix
     ./git.nix
+    ./networkmanager-dmenu.nix
   ];
 
   gaming.enable = lib.mkDefault false;
@@ -20,4 +21,5 @@
   helix.enable = lib.mkDefault true;
   zsh.enable = lib.mkDefault true;
   git.enable = lib.mkDefault true;
+  networkmanager-dmenu.enable = lib.mkDefault true;
 }

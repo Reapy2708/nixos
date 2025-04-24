@@ -16,6 +16,7 @@
 
     desktops = {
       plasma.enable = true;
+      hyprland.enable = true;
     };
 
     services = {
@@ -52,6 +53,7 @@
   environment.systemPackages = with pkgs; [
 	  wget
     git
+    which
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 

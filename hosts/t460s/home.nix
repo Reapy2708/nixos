@@ -15,6 +15,7 @@
   gaming.enable = true;
   crypto.enable = true;
   zsh.enable = true;
+  hyprland.enable = true;
   #home.packages = with pkgs; [];
 
   home.stateVersion = "24.11";

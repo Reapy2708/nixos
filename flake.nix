@@ -12,6 +12,14 @@
     # Grub Themes
     nixos-grub-themes.url = "github:jeslie0/nixos-grub-themes";
 
+    #Hyprland
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
+
+    
     #Home Manager
     home-manager = {
       #url = "github:nix-community/home-manager";
