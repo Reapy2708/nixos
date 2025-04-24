@@ -205,6 +205,14 @@
           "suppressevent maximize, class:.*"
           "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
         ];
+
+        xwayland = {
+          force_zero_scaling = true;
+        };
+
+        # toolkit-specific scale
+        #env = GDK_SCALE,2
+        #env = XCURSOR_SIZE,32
       };
     };
   };
