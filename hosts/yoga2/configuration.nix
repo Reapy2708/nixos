@@ -63,6 +63,42 @@
 
   hardware.sensor.iio.enable = true;
 
+  networking.useNetworkd = true;
+	systemd.network = {
+		enable = true;
+		netdevs = {
+			"10-bond0" = {
+				netdevConfig = {
+					Kind = "bond";
+					Name = "bond0";
+				};
+				bondConfig = {
+					Mode = "active-backup";  # In the 802.3ad mode, I was getting huge log spam about link speed and duplex mode not being determined.
+					MIIMonitorSec="0.800s";  # Unplugging the Ethernet cable turned full-duplex mode into half-duplex mode in /proc/net/bonding/bond0, but didn't fail over to wlan0.
+					PrimaryReselectPolicy="better";  # Fixes recovery after plugging in USB eth0
+				};
+			};
+		};
+		networks = {
+			"30-wlp0s20u2" = {
+				matchConfig.Name = "wlp0s20u2";
+				networkConfig.Bond = "bond0";
+				networkConfig.PrimarySlave = true;  # without this line, unplugging and replugging the USB ethernet adapter would not reactivate the eth0 route. Curiously, unplugging/replugging the Ethernet cable itself still workde fine.
+			};
+
+			"30-wlp1s0" = {
+				matchConfig.Name = "wlp1s0";
+				networkConfig.Bond = "bond0";
+			};
+
+			"40-bond0" = {
+				matchConfig.Name = "bond0";
+				linkConfig.RequiredForOnline = "carrier";
+				networkConfig.DHCP = "yes";
+			};
+		};
+	};
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
