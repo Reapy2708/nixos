@@ -34,7 +34,6 @@
   networking.hostName = "t440p-nvi"; # Define your hostname..
 
   services.xserver.enable = true;
-
   # Define a user account.
   users.users.tino = {
     isNormalUser = true;

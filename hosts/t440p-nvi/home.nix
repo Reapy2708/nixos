@@ -15,6 +15,11 @@
   zsh.enable = true;
   #home.packages = with pkgs; [];
 
+  services.flameshot = {
+        enable = true;
+        settings.General = { showStartupLaunchMessage = false; };
+  };
+
   home.stateVersion = "24.11";
   programs.home-manager.enable = true;
 }
