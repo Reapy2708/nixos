@@ -16,7 +16,10 @@
   crypto.enable = false;
   zsh.enable = true;
   hyprland.enable = false;
-  #home.packages = with pkgs; [];
+  home.packages = with pkgs; [
+    obsidian
+    vesktop
+  ];
 
   home.stateVersion = "24.11";
   programs.home-manager.enable = true;
