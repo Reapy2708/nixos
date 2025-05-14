@@ -82,7 +82,7 @@
 	  home-manager.nixosModules.home-manager {
 	    home-manager.useGlobalPkgs = true;
 	    home-manager.useUserPackages = true;
-	    home-manager.users.reapy = import ./hosts/ultimate-yoga/home.nix;
+	    home-manager.users.sinan = import ./hosts/ultimate-yoga/home.nix;
 	  }
 	];
       };
