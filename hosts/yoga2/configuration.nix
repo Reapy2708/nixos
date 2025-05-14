@@ -30,9 +30,9 @@
   networking.hostName = "yoga2"; # Define your hostname..
 
   # Define a user account.
-  users.users.sinan = {
+  users.users.reapy = {
     isNormalUser = true;
-    description = "Sinan";
+    description = "Michel";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
