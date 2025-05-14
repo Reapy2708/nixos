@@ -10,7 +10,7 @@
 
   nixOSModules = {
     programs = {
-      android.enable = false;
+      android.enable = true;
       steam.enable = true;
     };
 
