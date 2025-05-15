@@ -38,6 +38,8 @@
       kdePackages.kate
       kdePackages.plasma-vault
       thunderbird
+      iio-sensor-proxy
+      maliit-keyboard
     ];
   };
 
