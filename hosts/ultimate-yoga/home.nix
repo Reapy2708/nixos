@@ -19,6 +19,7 @@
   home.packages = with pkgs; [
     obsidian
     vesktop
+    geogebra6
   ];
 
   home.stateVersion = "24.11";
