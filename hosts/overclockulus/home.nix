@@ -1,8 +1,8 @@
 { config, pkgs, inputs, lib, ... }:
 
 {
-  home.username = "sinan";
-  home.homeDirectory = "/home/sinan";
+  home.username = "ares";
+  home.homeDirectory = "/home/ares";
 
   home.sessionVariables = {
     TERMINAL = "kitty";
