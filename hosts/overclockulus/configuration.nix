@@ -29,15 +29,20 @@
 
   networking.hostName = "ultimate-yoga"; # Define your hostname..
 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   # Define a user account.
-  users.users.sinan = {
+  users.users.ares = {
     isNormalUser = true;
     description = "Sinan";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.plasma-vault
-      thunderbird
+      #thunderbird
     ];
   };
 
