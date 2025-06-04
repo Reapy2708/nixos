@@ -56,6 +56,7 @@
     wget
     git
     which
+    prismlauncher-unwrapped
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 
