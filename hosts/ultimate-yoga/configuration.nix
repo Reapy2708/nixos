@@ -58,6 +58,7 @@
     which
     prismlauncher-unwrapped
     vscode
+    python314
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 
