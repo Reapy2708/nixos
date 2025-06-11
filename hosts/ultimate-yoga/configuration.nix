@@ -57,7 +57,7 @@
     git
     which
     prismlauncher-unwrapped
-    visualstudio-code
+    vscode
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 
