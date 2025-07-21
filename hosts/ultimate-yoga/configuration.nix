@@ -60,6 +60,7 @@
     vscode
     python314
     jdk17
+    libreoffice
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 
