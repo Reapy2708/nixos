@@ -76,6 +76,20 @@ services.printing.enable = true;
   openFirewall = true;
 };
 
+hardware.printers = {
+  ensurePrinters = [
+    {
+      name = "epson-xp-442";
+      location = "Home";
+      deviceUri = "usb://Dell/1250c%20Color%20Printer?serial=YNP023240";
+      model = "Dell-1250c.ppd.gz";
+      ppdOptions = {
+        PageSize = "A4";
+      };
+    }
+  ];
+};
+
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
