@@ -58,7 +58,6 @@
     which
     vscode
     python314
-    jdk17
     jdk21
     #inputs.helix.packages."${pkgs.system}".helix
   ];
