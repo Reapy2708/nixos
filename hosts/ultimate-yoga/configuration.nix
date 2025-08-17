@@ -58,7 +58,7 @@
     which
     vscode
     python314
-    zulu23
+    zulu21
     #inputs.helix.packages."${pkgs.system}".helix
   ];
 
