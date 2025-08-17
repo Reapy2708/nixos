@@ -22,7 +22,6 @@
     geogebra6
     spotify
     libreoffice
-    prismlauncher-unwrapped
   ];
 
   home.stateVersion = "24.11";
