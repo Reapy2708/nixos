@@ -60,6 +60,7 @@
     python314
     zulu21
     #inputs.helix.packages."${pkgs.system}".helix
+    prismlauncher-unwrapped
   ];
 
   # Enable the OpenSSH daemon.
