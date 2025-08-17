@@ -59,8 +59,8 @@
     vscode
     python314
     zulu21
-    #inputs.helix.packages."${pkgs.system}".helix
     prismlauncher-unwrapped
+    #inputs.helix.packages."${pkgs.system}".helix
   ];
 
   # Enable the OpenSSH daemon.
