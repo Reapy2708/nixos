@@ -22,6 +22,7 @@
     geogebra6
     spotify
     libreoffice
+    balena_etcher
   ];
 
   home.stateVersion = "24.11";
